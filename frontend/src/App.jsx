@@ -34,6 +34,7 @@ import MyLearning from "./pages/MyLearning";
 import ChatAssistant from "./pages/ChatAssistant";
 import AlertsPage from "./pages/AlertsPage";
 import MockDrillAlertCreate from "./pages/MockDrillAlertCreate";
+import CampusSimulation from "./pages/CampusSimulation";
 
 function App() {
   return (
@@ -211,6 +212,7 @@ function App() {
               >
                 <Route path="assistant" element={<ChatAssistant />} />
                 <Route path="alerts" element={<AlertsPage />} />
+                <Route path="simulation" element={<CampusSimulation />} />
               </Route>
 
               <Route

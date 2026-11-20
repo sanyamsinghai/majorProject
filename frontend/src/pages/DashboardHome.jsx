@@ -61,6 +61,29 @@ const DashboardHome = () => {
         </p>
       </div>
 
+      {/* 3D Campus Simulation Quick Launch Banner */}
+      <div className="mb-8 rounded-2xl bg-gradient-to-r from-blue-900 via-indigo-900 to-slate-900 p-6 text-white shadow-lg sm:p-8">
+        <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+          <div className="max-w-xl">
+            <span className="inline-flex items-center gap-1.5 rounded-full bg-blue-500/20 px-3 py-1 text-xs font-semibold text-blue-200 border border-blue-400/30">
+              🎮 SVVV Digital Twin • New Feature
+            </span>
+            <h2 className="mt-3 text-xl font-bold sm:text-2xl text-white">
+              3D Campus Evacuation Simulator
+            </h2>
+            <p className="mt-1 text-sm text-blue-100/80">
+              Immerse yourself in the 360° spatial environment of SVVV campus. Practice emergency exits, pull alarms, and navigate evacuation routes under simulated disaster conditions.
+            </p>
+          </div>
+          <Link
+            to="/dashboard/simulation"
+            className="inline-flex items-center justify-center gap-2 rounded-xl bg-white px-5 py-3 text-sm font-bold text-blue-950 shadow-md transition hover:bg-blue-50 hover:shadow-lg"
+          >
+            <span>🚨 Launch Simulation</span>
+          </Link>
+        </div>
+      </div>
+
       {/* Error */}
       {error && (
         <div className="mb-6 rounded-xl border border-red-200 bg-red-50 px-5 py-4 text-sm text-red-700">

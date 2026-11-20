@@ -75,6 +75,11 @@ const DashboardLayout = () => {
     show: user?.role === "teacher" || user?.role === "admin",
   },
   {
+    label: "3D Campus Simulation",
+    to: "/dashboard/simulation",
+    show: true,
+  },
+  {
     label: "AI Safety Assistant",
     to: "/dashboard/assistant",
     show: true,
